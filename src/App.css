@@ -1,38 +1,135 @@
+/* Main styling for the app */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0f3d, #243b55);
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+
+/* Form container styling */
+.form-container {
+  background-color: #f7f9f9;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.form-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Input radio styling */
+.input-type {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.radio-label {
+  font-size: 16px;
+  color: #555;
+}
+
+.radio-input {
+  margin-right: 10px;
+}
+
+/* Form input fields */
+.form-label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.file-input,
+.url-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.file-input:focus,
+.url-input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #4caf50;
   color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.submit-button:active {
+  background-color: #3e8c42;
+}
+
+/* Error and prediction message styles */
+.error-message {
+  color: #e74c3c;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.prediction-message {
+  color: #27ae60;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px;
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 12px;
   }
 }
