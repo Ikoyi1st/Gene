@@ -12,6 +12,7 @@
 /* Form container styling */
 .form-container {
   background-color: #f7f9f9;
+  padding: 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   max-width: 450px;
