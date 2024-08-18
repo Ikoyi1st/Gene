@@ -1,3 +1,4 @@
+/* Main styling for the app */
 .App {
   display: flex;
   justify-content: center;
@@ -8,6 +9,7 @@
   transition: background 0.5s ease;
 }
 
+/* Form container styling */
 .form-container {
   background-color: #f7f9f9;
   padding: 40px;
@@ -19,6 +21,7 @@
   transition: all 0.3s ease;
 }
 
+/* Title styling */
 .form-title {
   font-size: 24px;
   color: #333;
@@ -26,6 +29,7 @@
   font-weight: 600;
 }
 
+/* Input type section */
 .input-type {
   display: flex;
   justify-content: space-between;
@@ -35,12 +39,15 @@
 .radio-label {
   font-size: 16px;
   color: #555;
+  display: flex;
+  align-items: center;
 }
 
 .radio-input {
   margin-right: 10px;
 }
 
+/* Form input fields */
 .form-label {
   display: block;
   font-size: 16px;
@@ -66,6 +73,7 @@
   outline: none;
 }
 
+/* Submit button styling */
 .submit-button {
   background-color: #4caf50;
   color: white;
@@ -86,6 +94,7 @@
   background-color: #3e8c42;
 }
 
+/* Error and prediction message styles */
 .error-message {
   color: #e74c3c;
   margin-top: 20px;
@@ -98,6 +107,7 @@
   font-size: 18px;
 }
 
+/* Responsive design for inputs */
 @media (max-width: 768px) {
   .form-container {
     padding: 30px;
@@ -111,8 +121,15 @@
   .submit-button {
     font-size: 14px;
   }
+
+  .file-input,
+  .url-input {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 
+/* Further adjustments for smaller screens */
 @media (max-width: 480px) {
   .form-container {
     padding: 20px;
@@ -125,5 +142,16 @@
   .submit-button {
     font-size: 14px;
     padding: 12px;
+  }
+
+  .radio-label {
+    font-size: 14px;
+  }
+
+  .file-input,
+  .url-input {
+    font-size: 14px;
+    padding: 8px;
+    padding-right: 2px;
   }
 }
